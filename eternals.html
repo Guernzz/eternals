@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETERNALS</title>
+</head>
+<body>
+
+    <h1>The Eternals</h1>
+
+    <ul>
+        <li>Ikaris</li>
+        <li>Thena</li>
+        <li>Makkari</li>
+    </ul>
+
+
+
+    <label for="userInput">What attribute skill are you looking for? </label>
+    <input type="text" id = "userInput" value="" placeholder="Enter an Attribute">
+    <br>
+    <button onclick = "fn1()" id = "btn1">Search</button>
+    <div></div>
+
+
+
+
+    <div id = "arrPrint"></div>
+
+    <script>
+    
+    
+    const eternalsData = [
+
+        {
+    
+            eternalName: "Ikaris",
+    
+            attribute1: "Levitation",
+    
+            attribute2: "Psychic",
+    
+            attribute3: "Lazer Eyes"
+    
+        },
+    
+        {
+    
+            eternalName: "Makkari",
+    
+            attribute1:  "Superhuman Strength",
+    
+            attribute2: "Superhuman Speed",
+    
+            attribute3: "Superhuman Reflexes"
+    
+        },
+    
+        {
+    
+            eternalName: "Thena",
+    
+            attribute1: "Intellect",
+            
+            attribute2: "Combat Specialist",
+            
+            attribute3: "Teleportation"
+    
+        },
+    
+        {
+    
+            eternalName: "Zuras",
+    
+            attribute1: "Projection of Force",
+    
+            attribute2: "Telepathy",
+    
+            attribute3: "Regenerative Abilities"
+    
+        },
+    
+        {
+    
+            eternalName: "Druig",
+    
+            attribute1: "Mind Control",
+    
+            attribute2: "Energy Projection",
+    
+            attribute3: "Matter and Energy Manipulation"
+    
+        }
+    
+    ];
+    
+    function fn1()
+    {
+        var userResponse = userInput.value;
+        if (userResponse == eternalsData[0].attribute1 | userResponse == eternalsData[0].attribute2 | userResponse == eternalsData[0].attribute3)
+        {
+            document.getElementById("arrPrint").innerHTML = eternalsData[0].eternalName;
+            show_image(eternalsData[0].eternalName);
+        }
+
+        if (userResponse == eternalsData[1].attribute1 | userResponse == eternalsData[1].attribute2 | userResponse == eternalsData[1].attribute3)
+        {
+            document.getElementById("arrPrint").innerHTML = eternalsData[1].eternalName;
+            show_image(eternalsData[1].eternalName);
+        }
+
+        if (userResponse == eternalsData[2].attribute1 | userResponse == eternalsData[2].attribute2 | userResponse == eternalsData[2].attribute3)
+        {
+            document.getElementById("arrPrint").innerHTML = eternalsData[2].eternalName;
+            show_image(eternalsData[2].eternalName);
+        }
+
+        if (userResponse == eternalsData[3].attribute1 | userResponse == eternalsData[3].attribute2 | userResponse == eternalsData[3].attribute3)
+        {
+            document.getElementById("arrPrint").innerHTML = eternalsData[3].eternalName;
+            show_image(eternalsData[3].eternalName);
+        }
+
+        if (userResponse == eternalsData[4].attribute1 | userResponse == eternalsData[4].attribute2 | userResponse == eternalsData[4].attribute3)
+        {
+            document.getElementById("arrPrint").innerHTML = eternalsData[4].eternalName;
+            show_image(eternalsData[4].eternalName);
+        }
+
+    }
+
+    function show_image(x)
+    {
+
+        if (x == "Ikaris")
+        {
+            var a = document.createElement("img");
+            a.src = "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Eternals_v4.jpg/250px-Eternals_v4.jpg";
+            a.height = 100;
+            a.width = 100;
+        }
+
+        if (x == "Makkari")
+        {
+            var a = document.createElement("img");
+            a.src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Makkari_1.jpg/250px-Makkari_1.jpg";
+            a.height = 100;
+            a.width = 100;
+        }
+
+        if (x == "Thena")
+        {
+            var a = document.createElement("img");
+            a.src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Etrnlsv2003_cvr.jpg/250px-Etrnlsv2003_cvr.jpg";
+            a.height = 100;
+            a.width = 100;
+        }
+
+        
+        if (x == "Zuras")
+        {
+            var a = document.createElement("img");
+            a.src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Zuras_%28Marvel_Universe%29.png/150px-Zuras_%28Marvel_Universe%29.png";
+            a.height = 100;
+            a.width = 100;
+        }
+
+        if (x == "Druig")
+        {
+            var a = document.createElement("img");
+            a.src = "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Druig.jpg/250px-Druig.jpg";
+            a.height = 100;
+            a.width = 100;
+        }
+    }
+    </script>
+
+</body>
+</html>
